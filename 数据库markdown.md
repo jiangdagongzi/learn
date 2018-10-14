@@ -6,7 +6,7 @@
 
 | 字段        | 属性        | 说明                    |
 | ----------- | ----------- | ----------------------- |
-| id          | int         | 自增                    |
+| id          | bigint      | 自增                    |
 | user_name   | varchar(20) |                         |
 | auth        | bigint      | add,delete,modify,check |
 | password    | varchar(50) |                         |
@@ -19,7 +19,7 @@
 | ----------- | ------------ | ---- |
 | seckill_id  | bigint       | 自增 |
 | name        | varchar(120) |      |
-| nummber     | int          |      |
+| number      | int          |      |
 | start_time  | timestamp    | 非空 |
 | end_time    | timestamp    | 非空 |
 | create_time | timestamp    |      |
@@ -29,6 +29,6 @@
 | 字段       | 属性   | 说明 |
 | ---------- | ------ | ---- |
 | seckill_id | bigint |      |
-| id         | int    |      |
-|            |        |      |
+| id         | bigint |      |
+| state      | int    |      |
 

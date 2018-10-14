@@ -1,10 +1,14 @@
 package com.learn.tao.learn.repository;
 
 import com.learn.tao.learn.entity.Seckill;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.Date;
 import java.util.List;
 
+
+@Repository
 public interface SecKillRepository {
     /**
      *
@@ -12,7 +16,7 @@ public interface SecKillRepository {
      * @param killTime
      * @return
      */
-    int reduceNumber(long seckillId, Date killTime);
+    int reduceNumber(@Param("seckillId") long seckillId, @Param("killTime") Date killTime);
 
     /**
      *
@@ -23,10 +27,10 @@ public interface SecKillRepository {
 
     /**
      *
-     * @param offet
+     * @param offset
      * @param limit
      * @return
      */
-    List<Seckill> queryAll(int offet,int limit);
+    List<Seckill> queryAll(@Param("offset") int offset,@Param("limit") int limit);
 
 }

@@ -1,9 +1,11 @@
 package com.learn.tao.learn.repository;
 
 import com.learn.tao.learn.entity.User;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface UserRepository {
     /**
      *

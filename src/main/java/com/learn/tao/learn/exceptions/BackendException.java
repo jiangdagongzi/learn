@@ -1,11 +1,11 @@
 package com.learn.tao.learn.exceptions;
 
-import com.learn.tao.learn.Utils.Error;
-
 public class BackendException extends RuntimeException {
-    private Error error;
-    public BackendException(Error error){
-
+    private int errorCode;
+    private String errorMsg;
+    public BackendException(int errorCode,String errorMsg){
+        this.errorCode = errorCode;
+        this.errorMsg = errorMsg;
     }
 
 }

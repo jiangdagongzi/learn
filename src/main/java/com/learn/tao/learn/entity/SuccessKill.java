@@ -9,6 +9,13 @@ public class SuccessKill {
   private java.sql.Timestamp createTime;
   private Seckill seckill;
 
+  public Seckill getSeckill() {
+    return seckill;
+  }
+
+  public void setSeckill(Seckill seckill) {
+    this.seckill = seckill;
+  }
 
   public long getSeckillId() {
     return seckillId;
